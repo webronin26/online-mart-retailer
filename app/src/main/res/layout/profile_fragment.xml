@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.webronin_26.online_mart_retailer.profile.ProfileViewModel" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".add_retailer.AddRetailerFragment">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="基本資料" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginBottom="40dp"
+                android:text="(點擊內容，可直接修改)" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:text="公司名稱" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/profile_fragment_edit_view_name"
+                android:text="@={viewmodel.profileName}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:text="負責人名稱" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/profile_fragment_edit_view_responsible_person"
+                android:text="@={viewmodel.profileResponsiblePerson}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginBottom="20dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:text="統一編號" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/profile_fragment_edit_view_invoice"
+                android:text="@={viewmodel.profileInvoice}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginBottom="20dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:text="匯款帳號" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/profile_fragment_edit_view_remittance_account"
+                android:text="@={viewmodel.profileRemittanceAccount}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginBottom="20dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:text="公司電話" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/profile_fragment_edit_view_office_phone"
+                android:text="@={viewmodel.profileOfficePhone}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginBottom="20dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:text="聯絡人電話" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/profile_fragment_edit_view_personal_phone"
+                android:text="@={viewmodel.profilePersonalPhone}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginBottom="20dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:text="公司地址" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/profile_fragment_edit_view_office_address"
+                android:text="@={viewmodel.profileOfficeAddress}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginBottom="20dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:text="通訊地址" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/profile_fragment_edit_view_correspondence_address"
+                android:text="@={viewmodel.profileCorrespondenceAddress}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginBottom="20dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:text="運費" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/profile_fragment_edit_view_delivery_fee"
+                android:text="@={viewmodel.profileDeliveryFee}"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginBottom="20dp" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/profile_fragment_cancel_button"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="取消"
+                    android:textSize="30sp"
+                    android:background="@drawable/white_rounded_corner"
+                    android:layout_weight="1"
+                    android:layout_margin="20dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/profile_fragment_save_button"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="儲存"
+                    android:textSize="30sp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/orange_rounded_corner"
+                    android:layout_weight="1"
+                    android:layout_margin="20dp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+</layout>

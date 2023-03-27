@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/main_fragment">
+
+    <fragment
+        android:id="@+id/main_fragment"
+        android:name="com.webronin_26.online_mart_retailer.main.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment" />
+
+    <fragment
+        android:id="@+id/profile_fragment"
+        android:name="com.webronin_26.online_mart_retailer.profile.ProfileFragment"
+        android:label="profile_fragment"
+        tools:layout="@layout/profile_fragment" >
+        <action
+            android:id="@+id/action_profile_fragment_to_main_fragment"
+            app:destination="@id/main_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/product_list_fragment"
+        android:name="com.webronin_26.online_mart_retailer.product_list.ProductListFragment"
+        android:label="product_list_fragment"
+        tools:layout="@layout/product_list_fragment" >
+        <action
+            android:id="@+id/action_product_list_fragment_to_product_fragment"
+            app:destination="@id/product_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/product_fragment"
+        android:name="com.webronin_26.online_mart_retailer.product.ProductFragment"
+        android:label="product_fragment"
+        tools:layout="@layout/product_fragment">
+        <argument
+            android:name="product_id"
+            app:argType="integer"
+            android:defaultValue="1" />
+        <action
+            android:id="@+id/action_product_fragment_to_product_list_fragment"
+            app:destination="@id/product_list_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/order_list_fragment"
+        android:name="com.webronin_26.online_mart_retailer.order_list.OrderListFragment"
+        android:label="order_list_fragment"
+        tools:layout="@layout/order_list_fragment" >
+        <action
+            android:id="@+id/action_order_list_fragment_to_order_fragment"
+            app:destination="@id/order_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/order_fragment"
+        android:name="com.webronin_26.online_mart_retailer.order.OrderFragment"
+        android:label="order_fragment"
+        tools:layout="@layout/order_fragment" >
+        <argument
+            android:name="order_id"
+            app:argType="integer"
+            android:defaultValue="1" />
+        <action
+            android:id="@+id/action_order_fragment_to_order_list_fragment"
+            app:destination="@id/order_list_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/logout_fragment"
+        android:name="com.webronin_26.online_mart_retailer.logout.LogoutFragment"
+        android:label="logout_fragment"
+        tools:layout="@layout/logout_fragment" >
+        <action
+            android:id="@+id/action_logout_fragment_to_main_fragment"
+            app:destination="@id/main_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/add_product_fragment"
+        android:name="com.webronin_26.online_mart_retailer.add_product.AddProductFragment"
+        android:label="AddProductFragment" >
+        <action
+            android:id="@+id/action_add_product_fragment_to_main_fragment"
+            app:destination="@id/main_fragment" />
+    </fragment>
+
+</navigation>

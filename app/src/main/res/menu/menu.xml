@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/main_fragment"
+        android:icon="@drawable/home"
+        android:title="首頁" />
+
+    <item
+        android:id="@+id/add_product_fragment"
+        android:icon="@drawable/add_product"
+        android:title="增加新商品" />
+
+    <item
+        android:id="@+id/profile_fragment"
+        android:icon="@drawable/profile"
+        android:title="我的資訊" />
+
+    <item
+        android:id="@+id/product_list_fragment"
+        android:icon="@drawable/product"
+        android:title="商品列表" />
+
+    <item
+        android:id="@+id/order_list_fragment"
+        android:icon="@drawable/order"
+        android:title="訂單列表" />
+
+    <item
+        android:id="@+id/logout_fragment"
+        android:icon="@drawable/logout"
+        android:title="登出" />
+</menu>
